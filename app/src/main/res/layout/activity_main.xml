@@ -7,11 +7,96 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/lblResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="532dp"
+        android:text="Resultado"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblTitulo"
+        android:layout_width="336dp"
+        android:layout_height="79dp"
+        android:text="Calculadora 🤑"
+        android:textAlignment="center"
+        android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14" />
+
+    <TextView
+        android:id="@+id/lblSubtitulo"
+        android:layout_width="304dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="224dp"
+        android:text="Ingrese 2 numeros para sumar:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="336dp"
+        android:text="Numero 1:"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="452dp"
+        android:text="Numero 2:"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNum1"
+        android:layout_width="237dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="320dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNum2"
+        android:layout_width="237dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="428dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSumar"
+        android:layout_width="137dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="616dp"
+        android:onClick="sumar"
+        android:text="Sumar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
